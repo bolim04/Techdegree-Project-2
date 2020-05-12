@@ -16,9 +16,11 @@ FSJS project 2 - List Filter and Pagination
    will only be used inside of a function, then it can be locally 
    scoped to that function.
 ***/
-let listItem = document.getElementsByClassName('student-item cf');
-console.log(listItem);
-let pageView.length = 10;
+//studentList stores the student entries
+var studentList = document.getElementsByClassName('student-item cf');
+
+//pageView will be used to store the number of items to be shown on the page
+var pageView
 
 /*** 
    Create the `showPage` function to hide all of the items in the 
@@ -34,9 +36,13 @@ let pageView.length = 10;
        that will be passed into the parens later when you call or 
        "invoke" the function 
 ***/
-function showPage(listItem) {
-
+function showPage(studentList, pageView) {
+   let pageView = pageView.length = 10;
+   for(let i=0; i<=pageView; i+=1) {
+      return studentList;
+   };
 };
+console.log(showPage());
 
 
 
