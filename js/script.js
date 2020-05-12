@@ -16,9 +16,9 @@ FSJS project 2 - List Filter and Pagination
    will only be used inside of a function, then it can be locally 
    scoped to that function.
 ***/
-
-
-
+let listItem = document.getElementsByClassName('student-item cf');
+console.log(listItem);
+let pageView.length = 10;
 
 /*** 
    Create the `showPage` function to hide all of the items in the 
@@ -34,7 +34,9 @@ FSJS project 2 - List Filter and Pagination
        that will be passed into the parens later when you call or 
        "invoke" the function 
 ***/
+function showPage(listItem) {
 
+};
 
 
 
