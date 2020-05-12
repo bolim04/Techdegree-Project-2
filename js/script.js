@@ -20,7 +20,7 @@ FSJS project 2 - List Filter and Pagination
 var studentList = document.getElementsByClassName('student-item cf');
 
 //pageView will be used to store the number of items to be shown on the page
-var pageView
+//var pageView
 
 /*** 
    Create the `showPage` function to hide all of the items in the 
