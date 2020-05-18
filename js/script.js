@@ -17,10 +17,10 @@ FSJS project 2 - List Filter and Pagination
    scoped to that function.
 ***/
 //studentList stores the student entries
-var studentList = document.getElementsByClassName('student-item cf');
+let studentList = document.getElementsByClassName('student-item cf');
 
 //pageView will be used to store the number of items to be shown on the page
-//var pageView
+let pageView = 10;
 
 /*** 
    Create the `showPage` function to hide all of the items in the 
@@ -36,23 +36,29 @@ var studentList = document.getElementsByClassName('student-item cf');
        that will be passed into the parens later when you call or 
        "invoke" the function 
 ***/
-function showPage(studentList, pageView) {
-   let pageView = pageView.length = 10;
-   for(let i=0; i<=pageView; i+=1) {
-      return studentList;
+function showPage(list, page) {
+   startIndex = (page * pageView) - pageView;
+   endIndex = page * pageView;
+   for(let i=0; i<list.length; i++1) {
+      if(i>=startIndex && i<=endIndex) {
+         list[i].style.display = '';
+      }  else {
+            list[i].style.display = 'none';
+      }
    };
 };
-console.log(showPage());
-
-
 
 /*** 
-   Create the `appendPageLinks function` to generate, append, and add 
+   Create the `appendPageLinks function` to generate (create), append, and add 
    functionality to the pagination buttons.
 ***/
+function appendPageLinks(list) {
+   let newDiv = document.createElement('div');
+      newDiv.className = 'pagination';
+   let origDiv = document.getElementsByClassName('page');
+   origDev.appendChild.newDiv;
 
-
-
-
+};
+console.log(newDiv);
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
